@@ -50,7 +50,23 @@ public class SpellChecker {
      *  prints that value out before returning.
      */
     public boolean binarySpellCheck(String word) {
-        return false;
+        int leftIdx = 0;
+        int rightIdx = 127142;
+        
+        while (leftIdx <= rightIdx) {
+            int middleIdx = (rightIdx + leftIdx) / 2;
+            
+            if (dictionary.get(middleIdx).equals(word)) {
+                return true;
+            }
+            if (dictionary.get(middleIdx).compareTo(word) < 0) {
+                rightIdx = middleIdx - 1; 
+            } else {
+                leftIdx = middleIdx + 1;
+            }
+        }
+        
+        return false; 
     }
 
     // private helper method, called in the constructor, which loads the words
