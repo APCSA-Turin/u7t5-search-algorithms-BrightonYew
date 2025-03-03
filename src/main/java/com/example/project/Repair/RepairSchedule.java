@@ -1,5 +1,6 @@
 package com.example.project.Repair;
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class RepairSchedule {
     /** Each element represents a repair by an individual mechanic in a bay. */
@@ -13,6 +14,8 @@ public class RepairSchedule {
      */
     public RepairSchedule(int n) {
         /* to be implemented in part (a) */
+        numberOfMechanics = n;
+        schedule = new ArrayList<CarRepair>();
     }
 
     public ArrayList<CarRepair> getSchedule() {
@@ -23,15 +26,38 @@ public class RepairSchedule {
      * Precondition: 0 <= m < numberOfMechanics and b >= 0
      */
     public boolean addRepair(int m, int b) {
+        for (int i = 0; i < schedule.size(); i++) {
+            if (schedule.get(i).getMechanicNum() == m || schedule.get(i).getBayNum() == b) {
+                return false;
+            }
+        }
+
+        schedule.add(new CarRepair(m, b));
         return true;
     }
 
     /** Returns an ArrayList containing the mechanic identifiers of all available mechanics,
      * as described in part (b).
      */
-    public ArrayList<Integer> availableMechanics() {
-        return new ArrayList<Integer>();
+public ArrayList<Integer> availableMechanics() {
+    ArrayList<Integer> available = new ArrayList<>();
+    ArrayList<Integer> assignedMechanics = new ArrayList<Integer>();
+
+
+    for (CarRepair repair : schedule) {
+        assignedMechanics.add(repair.getMechanicNum());
     }
+
+
+    for (int i = 0; i < numberOfMechanics; i++) {
+        if (!assignedMechanics.contains(i)) {
+            available.add(i);
+        }
+    }
+
+    return available;
+}
+
 
     /** Removes an element from schedule when a repair is complete.
         THIS METHOD HAS BEEN ADDED FOR ILLUSTRATIVE PURPOSES ONLY,

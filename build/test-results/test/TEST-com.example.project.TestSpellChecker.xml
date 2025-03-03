@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.project.TestSpellChecker" tests="5" skipped="0" failures="3" errors="0" timestamp="2025-02-26T01:21:20" hostname="codespaces-d38762" time="1.471">
+<testsuite name="com.example.project.TestSpellChecker" tests="5" skipped="0" failures="3" errors="0" timestamp="2025-03-03T13:07:25" hostname="codespaces-d38762" time="1.741">
   <properties/>
-  <testcase name="testLinearSearchInList()" classname="com.example.project.TestSpellChecker" time="0.034"/>
-  <testcase name="testBinarySearchInList2()" classname="com.example.project.TestSpellChecker" time="0.01">
+  <testcase name="testLinearSearchInList()" classname="com.example.project.TestSpellChecker" time="0.041"/>
+  <testcase name="testBinarySearchInList2()" classname="com.example.project.TestSpellChecker" time="0.022">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;1&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;1&gt; but was: &lt;0&gt;
 	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at app//org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -96,7 +96,7 @@
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testBinarySearchNotInList()" classname="com.example.project.TestSpellChecker" time="0.001">
+  <testcase name="testBinarySearchNotInList()" classname="com.example.project.TestSpellChecker" time="0.019">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;17&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;17&gt; but was: &lt;0&gt;
 	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at app//org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -190,8 +190,8 @@
 	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testLinearSearchNotInList()" classname="com.example.project.TestSpellChecker" time="0.029"/>
-  <testcase name="testBinarySearchInList()" classname="com.example.project.TestSpellChecker" time="0.001">
+  <testcase name="testLinearSearchNotInList()" classname="com.example.project.TestSpellChecker" time="0.044"/>
+  <testcase name="testBinarySearchInList()" classname="com.example.project.TestSpellChecker" time="0.004">
     <failure message="org.opentest4j.AssertionFailedError: Frost is found in the list ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Frost is found in the list ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
 	at app//org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at app//org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)

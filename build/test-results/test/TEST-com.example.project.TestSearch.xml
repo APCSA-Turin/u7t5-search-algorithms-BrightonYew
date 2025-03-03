@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.project.TestSearch" tests="8" skipped="0" failures="2" errors="0" timestamp="2025-02-26T01:21:20" hostname="codespaces-d38762" time="0.099">
+<testsuite name="com.example.project.TestSearch" tests="8" skipped="0" failures="2" errors="0" timestamp="2025-03-03T13:07:24" hostname="codespaces-d38762" time="0.124">
   <properties/>
-  <testcase name="testLinearSearchFoundList()" classname="com.example.project.TestSearch" time="0.001"/>
-  <testcase name="testLinearSearchFirstArrayList()" classname="com.example.project.TestSearch" time="0.008"/>
-  <testcase name="testLinearSearchFoundArray()" classname="com.example.project.TestSearch" time="0.001"/>
+  <testcase name="testLinearSearchFoundList()" classname="com.example.project.TestSearch" time="0.002"/>
+  <testcase name="testLinearSearchFirstArrayList()" classname="com.example.project.TestSearch" time="0.002"/>
+  <testcase name="testLinearSearchFoundArray()" classname="com.example.project.TestSearch" time="0.002"/>
   <testcase name="testLinearSearchCountList()" classname="com.example.project.TestSearch" time="0.001"/>
-  <testcase name="testLinearSearchCountArray()" classname="com.example.project.TestSearch" time="0.006"/>
-  <testcase name="testLinearSearchLastArray()" classname="com.example.project.TestSearch" time="0.024">
+  <testcase name="testLinearSearchCountArray()" classname="com.example.project.TestSearch" time="0.0"/>
+  <testcase name="testLinearSearchLastArray()" classname="com.example.project.TestSearch" time="0.029">
     <failure message="java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 6" type="java.lang.ArrayIndexOutOfBoundsException">java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 6
 	at com.example.project.Linear_Search.Search.linearSearchLast(Search.java:24)
 	at com.example.project.TestSearch.testLinearSearchLastArray(TestSearch.java:41)
@@ -96,8 +96,8 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testLinearSearchFirstArray()" classname="com.example.project.TestSearch" time="0.001"/>
-  <testcase name="testLinearSearchLastList()" classname="com.example.project.TestSearch" time="0.026">
+  <testcase name="testLinearSearchFirstArray()" classname="com.example.project.TestSearch" time="0.0"/>
+  <testcase name="testLinearSearchLastList()" classname="com.example.project.TestSearch" time="0.009">
     <failure message="java.lang.IndexOutOfBoundsException: Index 6 out of bounds for length 6" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index 6 out of bounds for length 6
 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
 	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
